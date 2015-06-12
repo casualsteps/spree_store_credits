@@ -11,9 +11,12 @@ module Spree
       load_order_with_lock
 
       return unless params[:order] && params[:order][:store_credit_amount]
+
+      # Double check credit amount is not bigger than the user's total credit amount
       parsed_credit = Spree::Price.new
       parsed_credit.price = params[:order][:store_credit_amount]
       store_credit_amount = [parsed_credit.price, spree_current_user.store_credits_total].min
+
       if store_credit_amount >= (current_order.total + @order.store_credit_amount)
         params[:order].delete(:source_attributes)
         params.delete(:payment_source)

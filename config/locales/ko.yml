@@ -1,0 +1,22 @@
+---
+ko:
+  spree:
+    add_store_credit: "적립금 추가"
+    current_store_credit: "현재 적립금"
+    editing_store_credit: "적립금 수정"
+    enter_desired_amount_of_store_credit: "사용하실 적립금 액수를 입력하세요."
+    listing_store_credits: "적립금 목록"
+    new_store_credit: "새 적립금"
+    manage_store_credits: "적립금 관리"
+    orders_with_store_credit: "적립금 사용 주문"
+    remaining_amount: "남은 적립금"
+    store_credit: "적립금"
+    store_credit_maximum_amount: "적립금은 최대 %{amount}까지 사용하실 수 있습니다."
+    store_credits: "적립금"
+    you_have_store_credit: "사용 가능 적립금: %{amount}"
+    was_fully_used: "일부 금액 사용"
+    was_partially_used: "전체 금액 사용"
+    cannot_edit_used: "사용한 적립금은 수정 할 수 없습니다."
+    errors:
+      messages:
+        store_credit_minimum_order_not_reach: "적립금은 주문 금액이 최소 %{amount} 이상일 때만 사용하실 수 있습니다."
